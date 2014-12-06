@@ -1,4 +1,19 @@
-deploy_myapp_deps()
+deploy_batchmanager_deps()
 {
-  deploy backend
+
+}
+
+deploy_batchmanager_prep()
+{
+  mkproj
+}
+
+deploy_batchmanager_sw()
+{
+  deploy_pkg comp cms+batchmanager
+}
+
+deploy_batchmanager_post()
+{
+  
 }
