@@ -1,6 +1,6 @@
 deploy_batchmanager_deps()
 {
-
+  deploy backend
 }
 
 deploy_batchmanager_prep()
