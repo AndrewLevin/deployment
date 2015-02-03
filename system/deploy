@@ -161,7 +161,7 @@ system_groups_and_accounts()
   add_local_user 100049 _acdcserver   ,_config "ACDC Server App"
   add_local_user 100050 _gitweb       ,_config "GitWeb App"
   add_local_user 100051 _bigcouch     ,_config "BigCouch App"
-  add_local_user 100051 _batchmanager     ,_config "RelVal Batch Manager"
+  add_local_user 100052 _batchmanager     ,_config "RelVal Batch Manager"
   
   # Restart nscd to flush account changes. Current account will _not_
   # see these changes before logout/login however, so commands below
