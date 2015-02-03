@@ -436,11 +436,11 @@ deploy_system_post()
       # Install myproxy and voms tools as there is no slc6 build for it in AFS.
       # Only gets the voms configuration from AFS.
       sudo yum -y install myproxy
-      sudo rsync -cavu \
-        /afs/cern.ch/project/gd/LCG-share/current/glite/etc/vomses/ /etc/vomses/
-      sudo rsync -cavu \
-        /afs/cern.ch/project/gd/LCG-share/current/external/etc/grid-security/vomsdir/ \
-        /etc/grid-security/vomsdir/
+      # sudo rsync -cavu \
+      #  /afs/cern.ch/project/gd/LCG-share/current/glite/etc/vomses/ /etc/vomses/
+      #sudo rsync -cavu \
+      #  /afs/cern.ch/project/gd/LCG-share/current/external/etc/grid-security/vomsdir/ \
+      #  /etc/grid-security/vomsdir/
       sudo chown -R root:root /etc/vomses /etc/grid-security/vomsdir
 
       # Should be ok to use bashs from slc5 on slc6. There is no build for slc6 yet.
