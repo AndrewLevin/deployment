@@ -15,5 +15,5 @@ deploy_batchmanager_sw()
 
 deploy_batchmanager_post()
 {
-  
+  echo hi
 }
