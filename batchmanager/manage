@@ -47,9 +47,9 @@ start()
   echo "andrew debug 1"
   echo $LOGDIR
   echo "andrew debug 2"
-  python2.6 relval_batch_assigner.py
+  echo $BATCHMANAGER_ROOT/lib/python2.6/site-packages/relval_batch_assigner.py
   echo "andrew debug 3"
-  echo $BATCHMANAGER_ROOT
+  python2.6 $BATCHMANAGER_ROOT/lib/python2.6/site-packages/relval_batch_assigner.py
   echo "andrew debug 4"
   python2.6 relval_batch_assigner.py </dev/null 2>&1 | rotatelogs $LOGDIR/batchmanager-%Y%m%d.log 86400 >/dev/null 2>&1 &
   echo "andrew debug 5"
